@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login – BigSister</title>
+</head>
+<body>
+<p th:each="url : ${urls}">
+    <a th:text="'Sign in with ' + ${url.key}" th:href="${url.value}"></a>
+</p>
+</body>
+</html>
